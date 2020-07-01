@@ -31,7 +31,7 @@ You could assume no leading zero bit in the integer’s binary representation.
 **/
 class NumberComplement {
 	
-	public static int findComplement(int num) {
+    public static int findComplement(int num) {
         String s = Integer.toBinaryString(num); 
         System.out.println(s);
         StringBuilder sb = new StringBuilder(s.length());
@@ -43,9 +43,10 @@ class NumberComplement {
             }
         }
         return Integer.parseInt(sb.toString(), 2);
-	}
-    
-  public static void main(String...strings) {
+    }
+   
+    public static void main(String...strings) {
     	System.out.println("Output: "+findComplement(5));
-  }
+    }
+	
 }
