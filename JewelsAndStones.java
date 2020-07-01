@@ -43,7 +43,7 @@ class JewelsAndStones {
         return output;
     }
     
-    public static void main() {
+    public static void main(String...strings) {
     	System.out.println("Output: " +numJewelsInStones("aA", "aAAbbbb"));
     }
     
