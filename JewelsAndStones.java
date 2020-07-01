@@ -30,7 +30,8 @@ loop through the stones and increase the count if a stone is jewel, else skip.
 * @author Nishant
 **/
 class JewelsAndStones {
-    public int numJewelsInStones(String J, String S) {
+	
+    public static int numJewelsInStones(String J, String S) {
         Set<Character> jewels = new HashSet<>(50);
         for(int i=0; i<J.length(); i++) {
             jewels.add(J.charAt(i));
@@ -41,4 +42,9 @@ class JewelsAndStones {
         }
         return output;
     }
+    
+    public static void main() {
+    	System.out.println("Output: " +numJewelsInStones("aA", "aAAbbbb"));
+    }
+    
 }
