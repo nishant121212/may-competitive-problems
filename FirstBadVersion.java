@@ -31,12 +31,12 @@
 * @author Nishant
 **/
 public class FirstBadVersion{
-	private static int badVersion = 2;
+    private static int badVersion = 2;
 	
     //provided method
-	public static boolean isBadVersion(int n) {
-		return badVersion == n;
-	}
+    public static boolean isBadVersion(int n) {
+	return badVersion == n;
+    }
 	
     public static int firstBadVersion(int n) {
         return bs(0, n-1);
